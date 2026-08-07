@@ -80,9 +80,17 @@ Use Asklear to analyze the JD pet-snack category over the latest 12 complete mon
 Report the resolved time range, metric definitions, evidence, and limitations.
 ```
 
+## One documentation entry for agents
+
+Give your agent this single link. It indexes the current connection guide, Query Guide, dataset contracts, Query Patterns, Error Reference, and Cookbook without duplicating them in this repository:
+
+```text
+https://dashboard.asklearai.com/docs/agent/llms.txt
+```
+
 ## From research to deliverable
 
-- Read the [Agent Docs](https://dashboard.asklearai.com/docs/agent) for current connection instructions, dataset contracts, and error recovery.
+- Read the [Asklear Docs](https://dashboard.asklearai.com/docs/agent) in a browser for current connection instructions and reference material.
 - Use the [Asklear Cookbook](https://github.com/Asklear/asklear-cookbook) to turn research results into PPT, PDF, or Dashboard deliverables.
 
 ## Repository scope
