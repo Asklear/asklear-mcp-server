@@ -95,7 +95,9 @@ https://dashboard.asklearai.com/docs/agent
 ## Repository scope
 
 > [!NOTE]
-> This is the public adoption repository for the hosted Asklear MCP service. It does not contain the production service implementation, customer credentials, private endpoints, or commercial datasets. Runtime capabilities are determined by the authenticated service and account entitlement.
+> This is the public integration repository for the hosted Asklear MCP service. It does not contain the production service implementation, customer credentials, private endpoints, or commercial datasets. Runtime capabilities are determined by the authenticated service and account entitlement.
+
+This repository has one goal: provide the public entry point for adopting Asklear MCP. It owns this project introduction, the shortest safe connection example, and public security and license information. Production API and MCP contracts, dataset definitions, billing rules, Agent Docs, and Dashboard behavior are maintained by the service repository and exposed through the canonical Agent Docs entry above. Complete research workflows belong in the Cookbook; website and editorial Research content belong in the Mainpage repository.
 
 ## Security
 
