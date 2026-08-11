@@ -22,7 +22,7 @@
   <a href="./LICENSE"><img src="https://img.shields.io/github/license/Asklear/asklear-mcp-server?style=flat-square" alt="Apache-2.0 license"></a>
 </p>
 
-Asklear MCP 是 Asklear 托管的 [Model Context Protocol](https://modelcontextprotocol.io) 入口。AI Agent 通过一个稳定接口使用商业研究能力，访问控制、数据契约、用量与计费由服务端统一管理。
+Asklear MCP 是 Asklear · 澈问托管的 [Model Context Protocol](https://modelcontextprotocol.io) 入口。AI Agent 通过一个稳定接口使用商业研究能力，访问控制、数据契约、用量与计费由服务端统一管理。
 
 ## 可以研究什么
 
@@ -95,7 +95,9 @@ https://dashboard.asklear.cn/docs/agent
 ## 仓库边界
 
 > [!NOTE]
-> 这是 Asklear 托管 MCP 服务的公开采用仓库，不包含生产服务实现、客户凭据、私有接入地址或商业数据。实际能力由认证后的服务及账户权益决定。
+> 这是 Asklear · 澈问托管 MCP 服务的公开接入仓库，不包含生产服务实现、客户凭据、私有接入地址或商业数据。实际能力由认证后的服务及账户权益决定。
+
+本仓库只有一个目标：作为 Asklear MCP 的公开接入入口。这里只维护项目介绍、最短且安全的连接示例，以及公开安全与许可信息。生产 API/MCP 契约、数据集定义、计费规则、Agent Docs 和 Dashboard 行为由服务仓库维护，并通过上面的唯一 Agent Docs 入口交付；完整研究流程属于 Cookbook，官网与编辑型 Research 内容属于 Mainpage 仓库。
 
 ## 安全
 
