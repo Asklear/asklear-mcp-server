@@ -82,15 +82,14 @@ Beta 阶段采用邀请或申请制。[申请或登录](https://dashboard.asklea
 
 ## 给 Agent 的唯一文档入口
 
-只需要把下面这一个链接交给 Agent。它会索引当前的接入指南、查询指南、数据集契约、查询模式、错误参考和 Cookbook，本仓库不复制这些正文：
+人类和 Agent 共用下面这一个入口。它对人类正常显示网页，对 Agent 返回机器可读 Markdown，覆盖接入说明、数据集探索、查询口径、错误恢复、最佳实践和 Cookbook，本仓库不复制这些正文：
 
 ```text
-https://dashboard.asklear.cn/docs/agent/llms.txt
+https://dashboard.asklear.cn/docs/agent
 ```
 
 ## 从研究到交付物
 
-- 在浏览器中阅读 [Asklear Docs](https://dashboard.asklear.cn/docs/agent)，查看当前接入方式和参考资料。
 - 使用 [Asklear Cookbook](https://github.com/Asklear/asklear-cookbook)，将研究结果进一步生成 PPT、PDF 或 Dashboard。
 
 ## 仓库边界

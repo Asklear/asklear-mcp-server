@@ -82,15 +82,14 @@ Report the resolved time range, metric definitions, evidence, and limitations.
 
 ## One documentation entry for agents
 
-Give your agent this single link. It indexes the current connection guide, Query Guide, dataset contracts, Query Patterns, Error Reference, and Cookbook without duplicating them in this repository:
+Give people and agents the same single entry. It renders a normal page for people and machine-readable Markdown for agents, covering connection instructions, dataset discovery, query semantics, error recovery, best practices, and the Cookbook without duplicating them in this repository:
 
 ```text
-https://dashboard.asklearai.com/docs/agent/llms.txt
+https://dashboard.asklearai.com/docs/agent
 ```
 
 ## From research to deliverable
 
-- Read the [Asklear Docs](https://dashboard.asklearai.com/docs/agent) in a browser for current connection instructions and reference material.
 - Use the [Asklear Cookbook](https://github.com/Asklear/asklear-cookbook) to turn research results into PPT, PDF, or Dashboard deliverables.
 
 ## Repository scope
