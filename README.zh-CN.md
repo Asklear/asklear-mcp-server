@@ -36,37 +36,15 @@ Asklear MCP 是 Asklear · 澈问托管的 [Model Context Protocol](https://mode
 
 ## 快速开始
 
-### 1. 获取接入
-
-Beta 阶段采用邀请或申请制。[申请或登录](https://dashboard.asklear.cn/beta)后，Dashboard 会提供该账户准确的 MCP 地址和 API Key。
-
-### 2. 连接 Agent
-
-优先使用 Dashboard 生成的当前客户端配置。通用 Streamable HTTP 配置如下：
-
-```json
-{
-  "mcpServers": {
-    "asklear": {
-      "type": "http",
-      "url": "<YOUR_ASKLEAR_MCP_URL>",
-      "headers": {
-        "Authorization": "Bearer <YOUR_ASKLEAR_API_KEY>"
-      }
-    }
-  }
-}
-```
-
-> [!IMPORTANT]
-> API Key 只用于 MCP 配置，不要写入 Prompt、项目文件、研究报告或导出结果。
-
-### 3. 验证连接
+把下面这句公开指令复制给 Codex、Claude Code、WorkBuddy 或其他支持 MCP 的 Agent：
 
 ```text
-请验证 Asklear MCP 是否已经连接。如果我还没有提出数据问题，
-调用 connection_status，并告诉我认证是否成功。
+请连接 Asklear 并继续我原来的任务：https://dashboard.asklear.cn/agent-setup
 ```
+
+Agent 会读取 Setup 入口、添加托管 MCP 服务，并发起标准浏览器授权。你只需要在 Asklear 官方页面完成注册或登录、按需输入内测码并确认连接。授权完成后，Agent 会调用 `connection_status` 验证连接并继续刚才的任务。
+
+整个普通接入过程不需要把 API Key 复制到对话中。现有 API Key 继续用于 CI、服务账户和旧集成，入口下沉到 Dashboard 的高级集成区域。
 
 ## 尝试第一个研究问题
 
@@ -87,6 +65,8 @@ Beta 阶段采用邀请或申请制。[申请或登录](https://dashboard.asklea
 ```text
 https://dashboard.asklear.cn/docs/agent
 ```
+
+连接与授权统一从独立的 [Agent Setup 入口](https://dashboard.asklear.cn/agent-setup) 开始。
 
 ## 从研究到交付物
 
