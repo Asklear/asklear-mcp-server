@@ -7,8 +7,7 @@
 <p align="center"><strong>面向 AI Agent 的商业研究基础设施。</strong></p>
 
 <p align="center">
-  <a href="https://dashboard.asklear.cn/docs/agent">使用文档</a> ·
-  <a href="https://dashboard.asklear.cn/beta">申请接入</a>
+  <a href="https://docs.asklear.cn">Agent 使用手册</a>
 </p>
 
 <p align="center">
@@ -38,12 +37,10 @@ Asklear 目前处于内测阶段，能力覆盖京东、天猫、拼多多、抖
 把下面这句公开指令复制给 Codex、Claude Code、WorkBuddy 或其他支持 MCP 的 Agent：
 
 ```text
-请连接 Asklear 并继续我原来的任务：https://dashboard.asklear.cn/agent-setup
+请使用 Asklear 继续我当前的任务。如未连接 Asklear，请先读取 https://dashboard.asklear.cn/agent-setup 完成连接，然后继续当前任务。
 ```
 
 Agent 会读取 Setup 入口、添加托管 MCP 服务，并发起标准浏览器授权。你只需要在 Asklear 官方页面完成注册或登录、按需输入内测码并确认连接。授权完成后，Agent 会调用 `connection_status` 验证连接并继续刚才的任务。
-
-整个普通接入过程不需要把 API Key 复制到对话中。现有 API Key 继续用于 CI、服务账户和旧集成，入口下沉到 Dashboard 的高级集成区域。
 
 ## 尝试第一个研究问题
 
@@ -57,26 +54,26 @@ Agent 会读取 Setup 入口、添加托管 MCP 服务，并发起标准浏览�
 请说明实际时间范围、指标口径、证据和限制。
 ```
 
-## 给 Agent 的唯一文档入口
+## 使用手册
 
-人类和 Agent 共用下面这一个文档入口。它对人类正常显示网页，对 Agent 返回机器可读 Markdown，覆盖接入说明、能力发现、查询口径、错误恢复、最佳实践和使用案例，本仓库不复制这些正文：
+人类可在下面的公开使用手册中查看能力、查询规则、研究方法和错误恢复：
 
 ```text
-https://dashboard.asklear.cn/docs/agent
+https://docs.asklear.cn
 ```
 
-连接与授权统一从独立的 [Agent Setup 入口](https://dashboard.asklear.cn/agent-setup) 开始。
+连接后的 Agent 通过 MCP `docs` 工具读取同一内容源。连接与授权统一从独立的 [Agent Setup 入口](https://dashboard.asklear.cn/agent-setup) 开始。
 
 ## 从研究到交付物
 
-- 当问题需要更完整的研究流程或交付物时，使用 Agent Docs 中的使用案例。
+- 当问题需要更完整的研究路径时，使用 Agent Docs 中的研究方法。
 
 ## 仓库边界
 
 > [!NOTE]
 > 这是 Asklear · 澈问托管 MCP 服务的公开接入仓库，不包含生产服务实现、客户凭据、私有接入地址或商业数据。实际能力由认证后的服务及账户权益决定。
 
-本仓库只有一个目标：作为 Asklear MCP 的公开接入入口。这里只维护项目介绍、最短且安全的连接示例，以及公开安全与许可信息。生产 API/MCP 契约、数据集定义、计费规则、Agent Docs、使用案例和 Dashboard 行为由服务仓库维护，并通过上面的唯一 Agent Docs 入口交付；官网与编辑型 Research 内容属于 Mainpage 仓库。
+本仓库只有一个目标：作为 Asklear MCP 的公开接入入口。这里只维护项目介绍、最短且安全的连接示例，以及公开安全与许可信息。生产 API/MCP 契约、数据集定义、计费规则、Agent Docs、研究方法和 Dashboard 行为由服务仓库维护；官网与编辑型 Research 内容属于 Mainpage 仓库。
 
 ## 安全
 

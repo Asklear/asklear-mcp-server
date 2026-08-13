@@ -7,8 +7,7 @@
 <p align="center"><strong>Commercial research infrastructure for AI agents.</strong></p>
 
 <p align="center">
-  <a href="https://dashboard.asklearai.com/docs/agent">Documentation</a> ·
-  <a href="https://dashboard.asklearai.com/beta">Get access</a>
+  <a href="https://docs.asklear.cn/en/">Agent Docs</a>
 </p>
 
 <p align="center">
@@ -38,12 +37,10 @@ Asklear is currently in private beta. Its capabilities cover professional commer
 Copy this public instruction to Codex, Claude Code, WorkBuddy, or another MCP-capable Agent:
 
 ```text
-Connect Asklear and then continue my original task: https://dashboard.asklearai.com/agent-setup
+Use Asklear to continue my current task. If Asklear is not connected, read https://dashboard.asklearai.com/agent-setup, connect it, then continue the task.
 ```
 
 The Agent reads the setup entry, adds the hosted MCP server, and starts the standard browser authorization flow. You only step in on Asklear's official page to register or sign in, enter a beta invitation code when required, and approve the connection. The Agent then verifies `connection_status` and continues the task that led you here.
-
-No API Key is copied into the conversation. Existing API Keys remain available for CI, service accounts, and legacy integrations in the Dashboard's advanced integration area.
 
 ## Try a research question
 
@@ -57,26 +54,26 @@ Use Asklear to analyze the JD pet-snack category over the latest 12 complete mon
 Report the resolved time range, metric definitions, evidence, and limitations.
 ```
 
-## One documentation entry for agents
+## Agent Docs
 
-Give people and agents the same documentation entry. It renders a normal page for people and machine-readable Markdown for agents, covering connection instructions, capability discovery, query semantics, error recovery, best practices, and use cases without duplicating them in this repository:
+People can read the public manual for capabilities, querying rules, research methods, and error recovery:
 
 ```text
-https://dashboard.asklearai.com/docs/agent
+https://docs.asklear.cn/en/
 ```
 
-Connection and authorization always start at the separate [Agent Setup entry](https://dashboard.asklearai.com/agent-setup).
+After connection, Agents read the same content source through the MCP `docs` tool. Connection and authorization always start at the separate [Agent Setup entry](https://dashboard.asklearai.com/agent-setup).
 
 ## From research to deliverable
 
-- Use the Agent Docs use cases when a question requires a longer research workflow or a richer deliverable.
+- Use the Agent Docs research methods when a question needs a fuller research path.
 
 ## Repository scope
 
 > [!NOTE]
 > This is the public integration repository for the hosted Asklear MCP service. It does not contain the production service implementation, customer credentials, private endpoints, or commercial datasets. Runtime capabilities are determined by the authenticated service and account entitlement.
 
-This repository has one goal: provide the public entry point for adopting Asklear MCP. It owns this project introduction, the shortest safe connection example, and public security and license information. Production API and MCP contracts, dataset definitions, billing rules, Agent Docs, use cases, and Dashboard behavior are maintained by the service repository and exposed through the canonical Agent Docs entry above. Website and editorial Research content belong in the Mainpage repository.
+This repository has one goal: provide the public entry point for adopting Asklear MCP. It owns this project introduction, the shortest safe connection example, and public security and license information. Production API and MCP contracts, dataset definitions, billing rules, Agent Docs, research methods, and Dashboard behavior are maintained by the service repository. Website and editorial Research content belong in the Mainpage repository.
 
 ## Security
 
