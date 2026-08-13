@@ -8,7 +8,6 @@
 
 <p align="center">
   <a href="https://dashboard.asklear.cn/docs/agent">使用文档</a> ·
-  <a href="https://github.com/Asklear/asklear-cookbook">Cookbook</a> ·
   <a href="https://dashboard.asklear.cn/beta">申请接入</a>
 </p>
 
@@ -32,7 +31,7 @@ Asklear MCP 是 Asklear · 澈问托管的 [Model Context Protocol](https://mode
 | 品牌竞争格局 | 哪些品牌的份额正在上升或下降？ |
 | 增长驱动分析 | 哪些商品、价格带或店铺推动了变化？ |
 
-当前首先开放结构化的中国月度电商研究能力。根据账户权益，可用数据集可能包括京东、天猫或其他授权来源；当前实际能力始终以认证后的 MCP 工具列表为准。
+Asklear 目前处于内测阶段，能力覆盖京东、天猫、拼多多、抖音商城等专业商业数据，以及小红书和指定公开网页信息获取。实际权限和覆盖始终以认证后的 MCP 工具列表与运行时响应为准。
 
 ## 快速开始
 
@@ -60,7 +59,7 @@ Agent 会读取 Setup 入口、添加托管 MCP 服务，并发起标准浏览�
 
 ## 给 Agent 的唯一文档入口
 
-人类和 Agent 共用下面这一个入口。它对人类正常显示网页，对 Agent 返回机器可读 Markdown，覆盖接入说明、数据集探索、查询口径、错误恢复、最佳实践和 Cookbook，本仓库不复制这些正文：
+人类和 Agent 共用下面这一个文档入口。它对人类正常显示网页，对 Agent 返回机器可读 Markdown，覆盖接入说明、能力发现、查询口径、错误恢复、最佳实践和使用案例，本仓库不复制这些正文：
 
 ```text
 https://dashboard.asklear.cn/docs/agent
@@ -70,14 +69,14 @@ https://dashboard.asklear.cn/docs/agent
 
 ## 从研究到交付物
 
-- 使用 [Asklear Cookbook](https://github.com/Asklear/asklear-cookbook)，将研究结果进一步生成 PPT、PDF 或 Dashboard。
+- 当问题需要更完整的研究流程或交付物时，使用 Agent Docs 中的使用案例。
 
 ## 仓库边界
 
 > [!NOTE]
 > 这是 Asklear · 澈问托管 MCP 服务的公开接入仓库，不包含生产服务实现、客户凭据、私有接入地址或商业数据。实际能力由认证后的服务及账户权益决定。
 
-本仓库只有一个目标：作为 Asklear MCP 的公开接入入口。这里只维护项目介绍、最短且安全的连接示例，以及公开安全与许可信息。生产 API/MCP 契约、数据集定义、计费规则、Agent Docs 和 Dashboard 行为由服务仓库维护，并通过上面的唯一 Agent Docs 入口交付；完整研究流程属于 Cookbook，官网与编辑型 Research 内容属于 Mainpage 仓库。
+本仓库只有一个目标：作为 Asklear MCP 的公开接入入口。这里只维护项目介绍、最短且安全的连接示例，以及公开安全与许可信息。生产 API/MCP 契约、数据集定义、计费规则、Agent Docs、使用案例和 Dashboard 行为由服务仓库维护，并通过上面的唯一 Agent Docs 入口交付；官网与编辑型 Research 内容属于 Mainpage 仓库。
 
 ## 安全
 

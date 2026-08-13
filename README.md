@@ -8,7 +8,6 @@
 
 <p align="center">
   <a href="https://dashboard.asklearai.com/docs/agent">Documentation</a> ·
-  <a href="https://github.com/Asklear/asklear-cookbook">Cookbook</a> ·
   <a href="https://dashboard.asklearai.com/beta">Get access</a>
 </p>
 
@@ -32,7 +31,7 @@ Asklear MCP is the hosted [Model Context Protocol](https://modelcontextprotocol.
 | Competitive landscape | Which brands are gaining or losing share? |
 | Growth drivers | Which products, price bands, or shops drive the change? |
 
-Current access starts with structured monthly Chinese e-commerce research. Depending on account entitlement, available datasets may include JD, Tmall, or other authorized sources. The authenticated MCP tool list is always the source of truth for current capabilities.
+Asklear is currently in private beta. Its capabilities cover professional commercial data such as JD, Tmall, PDD, and Douyin ecommerce, plus public information from Xiaohongshu and specified webpages. The authenticated MCP tool list and runtime responses are always authoritative for actual access and coverage.
 
 ## Quick start
 
@@ -60,7 +59,7 @@ Report the resolved time range, metric definitions, evidence, and limitations.
 
 ## One documentation entry for agents
 
-Give people and agents the same single entry. It renders a normal page for people and machine-readable Markdown for agents, covering connection instructions, dataset discovery, query semantics, error recovery, best practices, and the Cookbook without duplicating them in this repository:
+Give people and agents the same documentation entry. It renders a normal page for people and machine-readable Markdown for agents, covering connection instructions, capability discovery, query semantics, error recovery, best practices, and use cases without duplicating them in this repository:
 
 ```text
 https://dashboard.asklearai.com/docs/agent
@@ -70,14 +69,14 @@ Connection and authorization always start at the separate [Agent Setup entry](ht
 
 ## From research to deliverable
 
-- Use the [Asklear Cookbook](https://github.com/Asklear/asklear-cookbook) to turn research results into PPT, PDF, or Dashboard deliverables.
+- Use the Agent Docs use cases when a question requires a longer research workflow or a richer deliverable.
 
 ## Repository scope
 
 > [!NOTE]
 > This is the public integration repository for the hosted Asklear MCP service. It does not contain the production service implementation, customer credentials, private endpoints, or commercial datasets. Runtime capabilities are determined by the authenticated service and account entitlement.
 
-This repository has one goal: provide the public entry point for adopting Asklear MCP. It owns this project introduction, the shortest safe connection example, and public security and license information. Production API and MCP contracts, dataset definitions, billing rules, Agent Docs, and Dashboard behavior are maintained by the service repository and exposed through the canonical Agent Docs entry above. Complete research workflows belong in the Cookbook; website and editorial Research content belong in the Mainpage repository.
+This repository has one goal: provide the public entry point for adopting Asklear MCP. It owns this project introduction, the shortest safe connection example, and public security and license information. Production API and MCP contracts, dataset definitions, billing rules, Agent Docs, use cases, and Dashboard behavior are maintained by the service repository and exposed through the canonical Agent Docs entry above. Website and editorial Research content belong in the Mainpage repository.
 
 ## Security
 
