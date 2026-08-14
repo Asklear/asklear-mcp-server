@@ -37,7 +37,7 @@ Asklear 目前处于内测阶段，能力覆盖京东、天猫、拼多多、抖
 把下面这句公开指令复制给 Codex、Claude Code、WorkBuddy 或其他支持 MCP 的 Agent：
 
 ```text
-请使用 Asklear 继续我当前的任务。如未连接 Asklear，请先读取 https://dashboard.asklear.cn/agent-setup 完成连接，然后继续当前任务。
+请使用 Asklear 继续我当前的任务。如未连接 Asklear，请先读取 https://dashboard.asklear.cn/agent-setup?format=markdown 完成连接，然后继续当前任务。
 ```
 
 Agent 会读取 Setup 入口、添加托管 MCP 服务，并发起标准浏览器授权。你只需要在 Asklear 官方页面完成注册或登录、按需输入内测码并确认连接。授权完成后，Agent 会调用 `connection_status` 验证连接并继续刚才的任务。
