@@ -34,7 +34,7 @@ Asklear is currently in private beta. Its capabilities cover professional commer
 
 ## Quick start
 
-Copy this public instruction to Codex, Claude Code, WorkBuddy, or another MCP-capable Agent:
+Copy this public instruction to Codex, Claude Code, or WorkBuddy:
 
 ```text
 Use Asklear to continue my current task. If Asklear is not connected, read https://dashboard.asklearai.com/agent-setup?format=markdown, connect it, then continue the task.

@@ -34,7 +34,7 @@ Asklear 目前处于内测阶段，能力覆盖京东、天猫、拼多多、抖
 
 ## 快速开始
 
-把下面这句公开指令复制给 Codex、Claude Code、WorkBuddy 或其他支持 MCP 的 Agent：
+把下面这句公开指令复制给 Codex、Claude Code 或 WorkBuddy：
 
 ```text
 请使用 Asklear 继续我当前的任务。如未连接 Asklear，请先读取 https://dashboard.asklear.cn/agent-setup?format=markdown 完成连接，然后继续当前任务。
