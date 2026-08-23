@@ -37,10 +37,10 @@ Asklear is currently in private beta. Its capabilities cover professional commer
 Copy this public instruction to Codex, Claude Code, or WorkBuddy:
 
 ```text
-Use Asklear to continue my current task. If Asklear is not connected, read https://dashboard.asklearai.com/agent-setup?format=markdown, connect it, then continue the task.
+Read https://dashboard.asklearai.com/agent-setup?format=markdown and help me connect Asklear.
 ```
 
-The Agent reads the setup entry, adds the hosted MCP server, and starts the standard browser authorization flow. You only step in on Asklear's official page to register or sign in, enter a beta invitation code when required, and approve the connection. The Agent then verifies `connection_status` and continues the task that led you here.
+The Agent reads the setup entry, adds the hosted MCP server, and starts the standard browser authorization flow. You only step in on Asklear's official page to register or sign in, enter a beta invitation code when required, and approve the connection. The Agent then verifies `connection_status`.
 
 ## Try a research question
 
