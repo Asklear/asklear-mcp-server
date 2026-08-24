@@ -4,81 +4,130 @@
 
 <h1 align="center">Asklear MCP</h1>
 
-<p align="center"><strong>Commercial research infrastructure for AI agents.</strong></p>
-
 <p align="center">
-  <a href="https://docs.asklear.cn/en/">Agent Docs</a>
+  <strong>Commercial data and web research for AI agents.</strong>
 </p>
 
 <p align="center">
-  English · <a href="./README.zh-CN.md">简体中文</a>
+  Give Codex, Claude Code, WorkBuddy, and enterprise agents<br>
+  access to commercial data, current content, and in-depth web evidence.
+</p>
+
+<p align="center">
+  <a href="https://dashboard.asklearai.com">Dashboard</a>
+  ·
+  <a href="https://dashboard.asklearai.com/agent-setup">Connect Asklear</a>
+  ·
+  <a href="https://docs.asklearai.com">Agent Docs</a>
+  ·
+  <a href="./README.zh-CN.md">简体中文</a>
 </p>
 
 <p align="center">
   <img src="https://img.shields.io/badge/MCP-Hosted-5B6EF5?style=flat-square" alt="Hosted MCP">
+  <img src="https://img.shields.io/badge/Auth-OAuth-16212A?style=flat-square" alt="OAuth">
   <img src="https://img.shields.io/badge/Transport-Streamable_HTTP-16212A?style=flat-square" alt="Streamable HTTP">
   <a href="./LICENSE"><img src="https://img.shields.io/github/license/Asklear/asklear-mcp-server?style=flat-square" alt="Apache-2.0 license"></a>
 </p>
 
-Asklear MCP is the hosted [Model Context Protocol](https://modelcontextprotocol.io) interface for Asklear. It gives authorized AI agents a stable way to use commercial research capabilities while access control, data contracts, usage, and billing remain managed by the service.
+## What is Asklear?
 
-## What you can research
+Asklear provides the commercial data and web capabilities AI agents need for research through a hosted [Model Context Protocol](https://modelcontextprotocol.io) service.
 
-| Research task | Example question |
-| --- | --- |
-| Market and category analysis | How large is a category, and how is it changing? |
-| Competitive landscape | Which brands are gaining or losing share? |
-| Growth drivers | Which products, price bands, or shops drive the change? |
+Agents can use Asklear to gather external evidence about markets, brands, products, content, and consumer response, combine it with a user's internal material, and conduct market analysis, category research, competitive comparisons, user research, and trend analysis.
 
-Asklear is currently in private beta. Its capabilities cover professional commercial data such as JD, Tmall, PDD, and Douyin ecommerce, plus public information from Xiaohongshu and specified webpages. The authenticated MCP tool list and runtime responses are always authoritative for actual access and coverage.
+Asklear manages data capabilities, account access, query contracts, usage, and billing.
 
-## Quick start
+## What can it do?
 
-Copy this public instruction to Codex, Claude Code, or WorkBuddy:
+| Capability | Best for | Current coverage examples |
+| --- | --- | --- |
+| Structured historical data | Market size, growth trends, brand share, product, and price-band analysis | JD, Tmall, Pinduoduo, and Douyin E-commerce |
+| Real-time platform interfaces | Consumer response, content performance, trend, and topic research | Xiaohongshu, Douyin, Weibo, Bilibili, WeChat Official Accounts, and WeChat Channels |
+| Cloud web collection | Reading public webpages in batches as clean, structured content | News, brand sites, industry sites, and other public pages |
+
+Authenticated MCP `tools/list` results and runtime responses are authoritative for current capabilities, fields, and account access.
+
+## Connect Asklear
+
+Send this instruction to an MCP-capable agent:
 
 ```text
 Read https://dashboard.asklearai.com/agent-setup?format=markdown and help me connect Asklear.
 ```
 
-The Agent reads the setup entry, adds the hosted MCP server, and starts the standard browser authorization flow. You only step in on Asklear's official page to register or sign in, enter a beta invitation code when required, and approve the connection. The Agent then verifies `connection_status`.
+The agent reads the latest official setup instructions and completes MCP configuration, OAuth authorization, and connection verification for the current client.
 
-## Try a research question
+You only step in on Asklear's official pages when trust, registration or sign-in, beta access, or authorization is required. You never need to copy or store an API key.
+
+> `https://dashboard.asklearai.com/agent-setup` is the single entry point for connecting Asklear. Follow the latest instructions returned by that entry.
+
+## Ask your first question
+
+After connecting, give the agent a business question directly:
 
 ```text
 Use Asklear to analyze the JD pet-snack category over the latest 12 complete months.
 
 1. How large is the market, and what is the monthly trend?
 2. Which brands lead, and how are their shares changing?
-3. What opportunities or risks deserve attention?
+3. Which products, price bands, or shops are driving growth?
+4. What opportunities or risks deserve attention?
 
 Report the resolved time range, metric definitions, evidence, and limitations.
 ```
 
-## Agent Docs
+The agent selects the relevant capabilities, runs the queries needed to answer the question, and explains the exact scope returned.
 
-People can read the public manual for capabilities, querying rules, research methods, and error recovery:
+## From question to conclusion
+
+Asklear is not limited to running a single query. It lets an agent combine evidence from different sources.
+
+To investigate a consumer brand's growth opportunities, an agent can:
+
+1. Measure market size, growth, and brand share with historical commerce data;
+2. Drill into products, shops, and price bands to locate the sources of growth;
+3. Retrieve current content and engagement data from content platforms;
+4. Analyze consumer concerns, use cases, and negative feedback;
+5. Combine those findings with internal sales, channel, or customer data;
+6. Deliver conclusions with definitions, evidence, and limitations.
 
 ```text
-https://docs.asklear.cn/en/
+Business question
+   ↓
+Structured market data + current consumer content + public web and internal material
+   ↓
+Agent analysis, validation, and delivery
 ```
 
-After connection, Agents read the same content source through the MCP `docs` tool. Connection and authorization always start at the separate [Agent Setup entry](https://dashboard.asklearai.com/agent-setup).
+## Choose the right capability
 
-## From research to deliverable
+- Markets, categories, brands, products, sales, or revenue → use structured historical data.
+- Current content, consumer response, trends, topics, or engagement → use real-time platform interfaces.
+- Multiple public webpages → use cloud web collection.
 
-- Use the Agent Docs research methods when a question needs a fuller research path.
+For the full capability catalog, query rules, research methods, and error recovery, read:
+
+- [Asklear Agent Docs](https://docs.asklearai.com)
+- [Capabilities & Data](https://docs.asklearai.com/capabilities)
+- [Query Guide](https://docs.asklearai.com/querying)
+- [Cookbook](https://docs.asklearai.com/cookbook)
+- [Errors & Recovery](https://docs.asklearai.com/errors)
+
+## Dashboard
+
+Visit the [Asklear Dashboard](https://dashboard.asklearai.com) to manage your account, connections, data access, and usage.
 
 ## Repository scope
 
-> [!NOTE]
-> This is the public integration repository for the hosted Asklear MCP service. It does not contain the production service implementation, customer credentials, private endpoints, or commercial datasets. Runtime capabilities are determined by the authenticated service and account entitlement.
+This is the public GitHub entry point for Asklear MCP. It provides the product and capability overview, the official connection entry, Agent Docs links, and public security and license information.
 
-This repository has one goal: provide the public entry point for adopting Asklear MCP. It owns this project introduction, the shortest safe connection example, and public security and license information. Production API and MCP contracts, dataset definitions, billing rules, Agent Docs, research methods, and Dashboard behavior are maintained by the service repository. Website and editorial Research content belong in the Mainpage repository.
+This repository does not contain the production server implementation, commercial data, customer credentials, or private infrastructure. The hosted service and authenticated runtime responses are authoritative for capabilities, data contracts, account access, and billing.
 
 ## Security
 
-Report vulnerabilities privately as described in [SECURITY.md](SECURITY.md). Do not open public issues for security reports.
+Report security issues privately as described in [SECURITY.md](./SECURITY.md). Do not disclose vulnerabilities or credentials in a public issue.
 
 ## License
 
-Licensed under [Apache-2.0](LICENSE). The license does not grant rights to use Asklear trademarks or imply endorsement.
+Licensed under the [Apache License 2.0](./LICENSE). The license does not grant rights to use Asklear trademarks or imply endorsement of third-party projects.
